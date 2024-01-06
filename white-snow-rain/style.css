@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background: #ADD8E6;
+}
+.snow {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
